@@ -25,7 +25,7 @@ function render(){
        tdbody.appendChild(imag);
        imag.setAttribute('src',storedata[index].img);
        
-       console.log(storedata[index].img);
+    //    console.log(storedata[index].img);
        tdbody = document.createElement('td');
        trbody.appendChild(tdbody);
        let para =document.createElement('p');
@@ -67,9 +67,13 @@ function  handleclick(event){
     console.log(storedata);
     render();
     setting();
-
+    document.getElementById('customername').value ='';
+    document.getElementById('foodtype').value ='';
 
 }
+document.getElementById('customername').value ='';
+// document.getElementById('foodtype').value ='';
+
 function randomfun(min,max){
     return parseInt( Math.random() * (max - min) + min);
 }
@@ -82,6 +86,7 @@ function getting(){
     let getdata = localStorage.getItem('mydata');
     let obj = JSON.parse(getdata);
     
+    // console.log(obj.randomunm);
     if(obj){
         obj.randomunm =randomfun();
         storedata =obj;

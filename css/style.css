@@ -25,7 +25,7 @@ header h1{
 body{
     background-image: url(../img/background.jpg);
     background-size: 1500px;
-  
+    font-family: Fredoka One ;
 }
 .form{
     float: left;
@@ -42,6 +42,8 @@ margin-left: 60px;
     color: red;
     font-family: Fredoka One ;
     width: 20px;
+    font-size: 20px;
+   
    
 }
 #myform{
@@ -54,13 +56,21 @@ margin-left: 60px;
 }
 #myform input{
     width: 200px;
-    border-radius: 5%;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+#myform select{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
 }
 #submit{
     background-color: red;
     color: wheat;
     width:150px;
-    padding: 10PX;
+    padding: 10px;
+    height: 25px;
     /* height: 50PX; */
     border-radius: 5%;
 } 
@@ -81,20 +91,23 @@ opacity: .9;
     margin-top: 60px;
     background-color: wheat;
     margin-left: 50px;
-    text-align: center;
-    line-height: 20px;
+   
+    
 }
-#table{margin-right: 30px;}
-.table p{
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+#table{margin-right: 30px;
+border-radius: 2%;}
+#table p{
+   margin-bottom: 20px;
+    line-height: 20px;
+   
    
 }
 #table img {
     width: 70px;
     height: 50px;
-    padding-left: 30px;
+    margin-left: 150px;
+    margin-top: 30px;
+    
 }
 footer p{
     display:block;
